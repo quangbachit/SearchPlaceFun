@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="R6x-3V-Nee" customClass="WindowMaker" customModule="Search_Bach" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="207" height="66"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Combined Shape" translatesAutoresizingMaskIntoConstraints="NO" id="aNy-Bs-hi7">
+                    <rect key="frame" x="0.0" y="0.0" width="207" height="66"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="uLA-lU-j43">
+                    <rect key="frame" x="76" y="11" width="123" height="25.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                    <color key="textColor" red="0.5123461787564767" green="0.40725097640977947" blue="0.13769509778352398" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="mey-3H-F6d">
+                    <rect key="frame" x="83" y="34" width="116" height="12"/>
+                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="10"/>
+                    <color key="textColor" red="0.5123461787564767" green="0.5123461787564767" blue="0.5123461787564767" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coffee" translatesAutoresizingMaskIntoConstraints="NO" id="mSv-8S-TZR">
+                    <rect key="frame" x="16" y="15" width="52" height="26"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="52" id="fVy-MU-o7B"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="uLA-lU-j43" firstAttribute="top" secondItem="R6x-3V-Nee" secondAttribute="top" constant="11" id="1VN-XI-67z"/>
+                <constraint firstItem="aNy-Bs-hi7" firstAttribute="leading" secondItem="R6x-3V-Nee" secondAttribute="leading" id="4P9-Wn-1lB"/>
+                <constraint firstItem="mSv-8S-TZR" firstAttribute="leading" secondItem="R6x-3V-Nee" secondAttribute="leading" constant="16" id="CQP-H0-Q0X"/>
+                <constraint firstItem="uLA-lU-j43" firstAttribute="leading" secondItem="mSv-8S-TZR" secondAttribute="trailing" constant="8" id="IBh-rc-deQ"/>
+                <constraint firstItem="mey-3H-F6d" firstAttribute="leading" secondItem="mSv-8S-TZR" secondAttribute="trailing" constant="15" id="KwP-B4-IhB"/>
+                <constraint firstAttribute="trailing" secondItem="aNy-Bs-hi7" secondAttribute="trailing" id="NNH-vy-Ufj"/>
+                <constraint firstItem="mSv-8S-TZR" firstAttribute="top" secondItem="R6x-3V-Nee" secondAttribute="top" constant="15" id="Ob4-1O-hyP"/>
+                <constraint firstAttribute="bottom" secondItem="mSv-8S-TZR" secondAttribute="bottom" constant="25" id="OcH-Hr-4Bq"/>
+                <constraint firstAttribute="trailing" secondItem="mey-3H-F6d" secondAttribute="trailing" constant="8" id="WZ7-Zu-ySW"/>
+                <constraint firstItem="aNy-Bs-hi7" firstAttribute="top" secondItem="R6x-3V-Nee" secondAttribute="top" id="a42-2c-AWT"/>
+                <constraint firstAttribute="trailing" secondItem="uLA-lU-j43" secondAttribute="trailing" constant="8" id="kRV-SB-bVf"/>
+                <constraint firstAttribute="bottom" secondItem="aNy-Bs-hi7" secondAttribute="bottom" id="uOt-s7-SyH"/>
+                <constraint firstAttribute="bottom" secondItem="mey-3H-F6d" secondAttribute="bottom" constant="20" id="ubV-x0-2Ks"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="addressLb" destination="mey-3H-F6d" id="aK5-Rl-R3d"/>
+                <outlet property="imgBg" destination="mSv-8S-TZR" id="qd1-xw-hx4"/>
+                <outlet property="nameLb" destination="uLA-lU-j43" id="8Hs-zc-t7H"/>
+            </connections>
+            <point key="canvasLocation" x="-54.5" y="-540"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Combined Shape" width="200" height="45"/>
+        <image name="coffee" width="720" height="720"/>
+    </resources>
+</document>
